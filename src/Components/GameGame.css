@@ -1,0 +1,32 @@
+.gameGame{
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  text-align: center;
+}
+
+.imageDiv, img{
+  width:  150px;
+  height: 150px;
+  border-radius: 5px;
+  float: left;
+}
+img{
+  border-radius: 1px;
+}
+
+.imageDiv{
+  border: 5px rgb(211, 211, 211) solid;
+  box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  margin: 20px;
+}
+.CharacContainer{
+  width: 70%;
+  height: 650px;
+  background-color: aquamarine;
+  margin: auto; 
+  text-align: center;
+  padding-left: 90px;
+  padding-top: 40px;
+}
