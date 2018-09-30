@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
 }
 
 .App-logo {
@@ -29,14 +30,28 @@
 
 .gameHeader{
   width: 100%;
-  height: 30px;
-  background-color: blue;
+  height: 50px;
+  background-color: #222;
   box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  color: white;
+  font-weight: 600;
+  padding-top: 10px;
+  position: fixed;  
 }
 
 .gameBody{
   width: 100%;
-  height: 100px;
+  height: 375px;
   background-color: blue;
   box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  background-image: url("./images/background.jpg");
+  background-size:  cover;
+}
+.gameFooter{
+  width:100%;
+  height: 35px;
+  background-color: #222;
+  color: white;
+  font-weight: 600;
+  padding-top: 15px;
 }

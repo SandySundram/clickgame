@@ -21,10 +21,18 @@ img{
   box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
   margin: 20px;
 }
+.imageDiv:hover{
+  webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: .1s;
+  -o-transition: .1s;
+  transition: .1s;
+}
 .CharacContainer{
   width: 70%;
   height: 650px;
-  background-color: aquamarine;
+  background-color: #3690ff;
   margin: auto; 
   text-align: center;
   padding-left: 90px;

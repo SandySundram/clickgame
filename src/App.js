@@ -40,36 +40,46 @@ class App extends Component {
   };
 
   whenClicked = (id) => {
-    alert(id);
     let clickedImages = this.state.clicked;
-    let {score, highScore} = this.state;
-    // let highScore = this.state.highScore;
-
-    console.log(clickedImages,score,highScore);
+    let {score} = this.state;
 
     if(clickedImages.includes(id)){
-      highScore = score;
-      score = 0;
-      clickedImages = [];
+      // highScore = score;
+      this.setState({highScore: score,
+                      score:0,
+                      clicked:[]});
     }else{
       score++;
-      clickedImages = [,...id];
-      console.log(score, clickedImages);
+      clickedImages.push(id);
+      this.setState({score:this.state.score+1,
+                      clicked:clickedImages});
     }
-    this.setState = {clicked:clickedImages,score:score,highScore:highScore};
-    // this.state.score = score;
-    // this.state.highScore = highScore;
 
     //shuffle images
+    let array = this.state.images;
+    let counter = array.length;
 
-    
+    // While there are elements in the array
+    while (counter > 0) {
+        // Pick a random index
+        let index = Math.floor(Math.random() * counter);
+
+        // Decrease counter by 1
+        counter--;
+
+        // And swap the last element with it
+        let temp = array[counter];
+        array[counter] = array[index];
+        array[index] = temp;
+    }
+    this.setState({images: array});
 
   }
 
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header score={this.state.score} highScore={this.state.highScore}/>
         <Body />
         <div className="gameGame">
             <div className="CharacContainer">   

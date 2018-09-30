@@ -3,7 +3,7 @@ import './GameBody.css';
 
 class Body extends Component{
     render(){
-        return(<div className="gameBody">Body</div>);
+        return(<div className="gameBody"></div>);
     }
 }
 
