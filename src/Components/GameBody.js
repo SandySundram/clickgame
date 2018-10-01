@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import './GameBody.css';
 
 class Body extends Component{
     render(){
-        return(<div className="gameBody"></div>);
+        return(<div className="gameBody"><div className="buffer"></div><div className="bodyBackground"></div></div>);
     }
 }
 
